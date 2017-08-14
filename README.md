@@ -43,4 +43,4 @@ The reason of the error ? auditd did not create the log folder:
 /var/log/auditd
 ```
 
-So I added in my audit_service.config the command to create the auditd folder
+So I added in my [03_auditd_commands.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/03_auditd_commands.config) the command to create the auditd folder
