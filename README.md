@@ -2,6 +2,8 @@
 
 This repository contains the Elastic Beanstalk extensions configuration to install and configure auditd.
 
+
+&nbsp;
 ### Some errors that I had 
 
 When I started to configure my auditd I was having the following error:
