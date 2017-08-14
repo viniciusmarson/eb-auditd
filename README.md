@@ -2,6 +2,25 @@
 
 This repository contains the Elastic Beanstalk extensions configuration to install and configure auditd.
 
+##### 00_auditd_packages.config
+
+Install auditd 
+
+##### 01_auditd_conf.config
+
+Overwrite the auditd configuration
+
+##### 02_auditd_rules.config
+
+Create auditd rules file
+
+##### 03_auditd_commands.config
+
+Run some commands to ensure that audid will run in a new instance
+
+##### 04_auditd_service.config
+
+Configure EB to monitor the auditd to ensure that it is always running
 
 &nbsp;
 ### Some errors that I had 
