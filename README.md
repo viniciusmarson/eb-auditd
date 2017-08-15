@@ -6,21 +6,27 @@ This repository contains the Elastic Beanstalk extensions configuration to insta
 
 Install auditd 
 
-##### [01_auditd_conf.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/01_auditd_conf.config)
+##### [01_auditd_log_aws_conole.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/01_auditd_log_aws_conole.config)
+
+Add the auditd log file in the Elastic Beanstalk log console
+
+
+##### [02_auditd_conf.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/02_auditd_conf.config)
 
 Overwrite the auditd configuration
 
-##### [02_auditd_rules.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/02_auditd_rules.config)
+##### [03_auditd_rules.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/03_auditd_rules.config)
 
 Create auditd rules file
 
-##### [03_auditd_commands.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/03_auditd_commands.config)
+##### [04_auditd_commands.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/04_auditd_commands.config)
 
 Run some commands to ensure that audid will run in a new instance
 
-##### [04_auditd_service.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/04_auditd_service.config)
+##### [05_auditd_service.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/05_auditd_service.config)
 
 Configure EB to monitor the auditd to ensure that it is always running
+
 
 &nbsp;
 ### Some errors that I had 
@@ -43,4 +49,4 @@ The reason of the error ? auditd did not create the log folder:
 /var/log/auditd
 ```
 
-So I added in my [03_auditd_commands.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/03_auditd_commands.config) the command to create the auditd folder
+So I added in my [04_auditd_commands.config](https://github.com/viniciusmarson/eb-auditd/blob/master/.ebextensions/04_auditd_commands.config) the command to create the auditd folder
